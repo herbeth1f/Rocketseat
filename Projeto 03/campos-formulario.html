@@ -19,7 +19,7 @@
             <h1>Titulo do Form</h1>
             <p> Primeiro passo prencher seu formulario </p>
         </header>
-        <form>
+        <form id="my-form">
             <fieldset>
                 <div class="fieldset-wrapper">
 
@@ -27,12 +27,12 @@
 
                     <div class="input-wrapper">
                         <label for="event-title"> Nome do evento <span>(mínimo 8 caracteres)</span></label>
-                        <input type="text" id="event-title" />
+                        <input  minlength="8" required type="text" id="event-title" />
                     </div>
 
                     <div class="input-wrapper">
                         <label for="event-link"> Link do Evento <span>(Comece com https:)</span></label>
-                        <input type="url" id="event-link" />
+                        <input  required type="url" id="event-link" />
                     </div>
 
                     <div class="input-wrapper">
@@ -69,7 +69,7 @@
 
                     <div class="input-wrapper">
                         <label for="event-password"> Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
-                        <input type="password" id="event-password" />
+                        <input minlength="8" required type="password" id="event-password" />
                     </div>
 
                     <div class="checkbox-wrapper">
@@ -112,7 +112,10 @@
 
         </form>
         <footer>
-            <input  class="button"  type="submit" value="Salvar Evento">
+            <input form="my-form" class="button"  type="submit" value="Salvar Evento">
+
+           <!-- <button  form="my-form" class="button"  " value="Salvar Evento"> </button> -->
+
 
         </footer>
     </div>
