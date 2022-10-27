@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+:root{
+
+    --ff-heading: 'Staatliches', sans-serif;
+    --ff-texting: 'Palanquin', sans-serif;
+  
+    --bg-primary: hsla(233, 100%, 97%, 1);
+    --bg-button-box: hsla(312, 91%, 96%, 1);
+    --bg-button-header:hsla(275, 18%, 79%, 1);
+    --bg-box-header:hsla(218, 17%, 62%, 1);
+    --fc-text-dark: hsla(232, 17%, 35%, 1);
+
+    font-size: 62.5%;
+    --fs-body: 1.5rem;
+    --fs-heading: 4rem;
+    --fs-text: 2rem;
+}
+  
+
+body {
+    font-family: var(--ff-texting);
+    font-size: var(--fs-body);
+    font-weight: 400;
+  
+    background-color: var(--bg-primary);
+    color: #fff;
+  }
+
+  .page {
+    display: grid;
+    
+    max-width: 38.4rem;
+    margin: 0 auto;
+  }
+
+  img{
+    height: auto;
+    width: 100%;
+  }
+
+  header{
+    text-align: center;
+    padding: 3.2rem 0 2.9rem;
+
+    background-color: var(--fc-text-dark);
+    color: var(--fc-primary);
+  }
+
+  header img{
+    width: 13.7rem;
+    margin-bottom: 3.2rem;
+  }
+
+  header h1{
+    text-transform: uppercase;
+    height: 4.9rem;
+    line-height: 3.4rem;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: var(--fs-heading);
+    background-color: var(--bg-button-header);
+  }
+
+  main p{
+    font-family: var(--fs-texting);
+    font-size: var(--fs-text);
+    color: var(--fc-text-dark);
+    text-align: center;
+
+    line-height: 1.5rem;
+    padding-top: 1.4rem;
+    padding-bottom: 6.3rem;
+
+  }
