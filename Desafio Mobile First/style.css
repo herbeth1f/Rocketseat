@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -70,14 +72,83 @@ body {
     background-color: var(--bg-button-header);
   }
 
-  main p{
-    font-family: var(--fs-texting);
+  .text{
+    font-family: 'Palanquin';
+    font-style: normal;
     font-size: var(--fs-text);
     color: var(--fc-text-dark);
     text-align: center;
-
+    font-weight: 400;
     line-height: 1.5rem;
-    padding-top: 1.4rem;
+    align-items: center;
+
+    padding-top: 0;
     padding-bottom: 6.3rem;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 30.5rem;
+    display: flex;
+  
+  }
+
+  main{
+    display: grid;
+    text-align: center;
+    padding: 1.4rem 3.2rem 6rem;
+  }
+
+  .cards{
+    position: relative;
+    animation: downtop 1s 325ms backwards;
+  }
+
+  .cards + .cards {
+    margin-top: 3.6rem;
+}
+
+
+  .cards h2{
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+
+    font-weight: 400;
+    font-size: var(--fs-text);
+    font-family: var(--ff-heading);
+    line-height: 3.4rem;
+    color: var(--fc-text-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    
+    animation: topdown 1s 850ms backwards;
+
+    letter-spacing: 0.05em;
+
+    width: 11.2rem;
+    border-radius: 2.0rem;
+
+    background-color: var(--bg-button-box);
 
   }
+
+@keyframes downtop {
+  0%{
+    opacity: 0;
+    transform: translateY(5.5rem );
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  @keyframes topdown {
+    0%{
+      opacity: 0;
+      transform: translateY(-3.0rem);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
