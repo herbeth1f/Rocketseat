@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bc-primary: hsl(0, 0%, 100%);
+  --fc-primary: hsl(240, 6%, 21%);
+  --fc-second: hsl(240, 9%, 89%);
+  --fc-third: hsl(194, 97%, 31%);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background: var(--bc-primary);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 68rem;
+  width: 82.2rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  font-size: 12.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--fc-primary);
+  animation: topDown 700ms backwards;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  animation: topDown 700ms 350ms backwards;
+}
+
+.controls button,
+.soundsButton button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hiden {
+  display: none;
+}
+
+.soundsButton {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  animation: downTop 700ms backwards;
+  
+}
+
+.soundsButton button {
+  background: var(--fc-second);
+  height: 15.2rem;
+  width: 13.8rem;
+  border-radius: 2.4rem;
+
+}
+
+
+
+.enable button {
+  background: var(--fc-third);
+ 
+}
+
+.enable button svg path {
+  fill: var(--bc-primary);
+}
+
+
+.forest,
+.rain,
+.coffee,
+.fireplace {
+  position: relative;
+}
+
+#volumeForest,
+#volumeRain,
+#volumeCoffee,
+#volumeFireplace {
+display: none;
+}
+
+
+
+@keyframes topDown {
+  0% {
+    opacity: -1;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes downTop {
+  0% {
+    opacity: -1;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    gap: 19.2rem;
+    margin-top: 9rem;
+    height: 33.6rem;
+  }
+}
