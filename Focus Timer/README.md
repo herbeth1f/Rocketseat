@@ -10,10 +10,13 @@ Cada card que se encontra do lado direito, quando selecionado, vai mudar de cor 
 
 Funcionalidades esperadas dos botões:
 
- **Play** : aciona o timer
- **Stop** : para o timer
-**+**  : aumenta em mais 5 minutos o tempo do timer
-**-**   : diminui em 5 minutos o tempo do timer
+ **Play** : aciona o timer;
+ 
+ **Stop** : para o timer;
+ 
+**+**  : aumenta em mais 5 minutos o tempo do timer;
+
+**-**   : diminui em 5 minutos o tempo do timer.
 
 [![My Skills](https://skills.thijs.gg/icons?i=js,html,css)](https://skills.thijs.gg)
 
